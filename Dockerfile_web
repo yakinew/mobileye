@@ -1,0 +1,4 @@
+FROM python:3.10
+ADD main_web_server.py
+RUN pip install ./requirements.txt
+CMD [ "python", "./main_web_server.py"]
